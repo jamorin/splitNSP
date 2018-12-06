@@ -17,3 +17,11 @@ This will not make a copy of the NSP and instead will split the original. This i
 Once the folder is made and the archive flag is set copy it to your SD card (sdmc:/tinfoil/nsp/ if using tinfoil) and install it like any other NSP. 
 
 If you have any issues feel free to submit an issue and I'll try my best to work it out. 
+
+## splitXCI
+
+```python3 splitXCI.py filename.xci```
+
+This will create [filename].xc0, [filename].xc1, [filename].xc2, etc.. depending on the size of the original XCI file. Copy the files to sdmc:/sxos/xci, hddmc:/sxos/xci, or where ever you store XCI.
+
+> Note: card2 XCI's thumbnail do not show up correctly as of SX OS 2.3 BETA, but still run correctly.
